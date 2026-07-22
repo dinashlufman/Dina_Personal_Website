@@ -801,6 +801,7 @@ a.nav-cta {
     box-shadow: 0 16px 30px -20px rgba(67,31,102,0.4);
   }
   .nav.open { display: flex; }
+  .portrait-tag { white-space: normal; text-align: center; }
   .nav a { width: 100%; padding: 10px 0; }
   .nav-cta { margin-top: 8px; text-align: center; }
   .nav-toggle { display: flex; }
