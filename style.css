@@ -295,6 +295,9 @@ a.nav-cta {
   display: block;
 }
 .portrait-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--purple-700);
@@ -302,6 +305,13 @@ a.nav-cta {
   border: 1px solid var(--border);
   padding: 8px 18px;
   border-radius: 999px;
+  white-space: nowrap;
+}
+.portrait-tag-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* ---------- Sections ---------- */
@@ -391,6 +401,20 @@ a.nav-cta {
 .education-main h3 { color: #fff; font-size: 1.3rem; }
 .education-degree { color: var(--lavender-soft); font-weight: 500; margin-bottom: 6px; }
 .education-meta { color: rgba(255,255,255,0.85); font-size: 0.9rem; margin-bottom: 0; }
+.education-main-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.education-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+}
 .education-tags {
   display: flex;
   flex-wrap: wrap;
@@ -685,6 +709,7 @@ a.nav-cta {
   .timeline { padding-left: 26px; }
   .timeline-dot { left: -34px; }
   .cta-inner { padding: 48px 24px; }
+  .education-main-head { flex-direction: column; text-align: center; }
   .contact-details { display: flex; flex-direction: column; gap: 8px; }
   .contact-sep { display: none; }
 }
