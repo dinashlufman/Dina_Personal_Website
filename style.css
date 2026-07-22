@@ -10,6 +10,7 @@
   --rose: #c9718f;
   --rose-soft: #e8b9c8;
   --rose-deep: #7a3350;
+  --rose-deep-on-tint: #4d1e32;
   --cream: #fbf6f1;
   --cream-deep: #f4e9df;
   --paper: #fffdfb;
@@ -174,6 +175,11 @@ a.nav-cta:focus-visible,
   display: flex;
   align-items: center;
   gap: 14px;
+}
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .brand {
   font-family: 'Playfair Display', serif;
@@ -612,7 +618,7 @@ a.nav-cta {
   letter-spacing: 0.08em;
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--rose-deep);
+  color: var(--rose-deep-on-tint);
   background: var(--rose-soft);
   padding: 5px 12px;
   border-radius: 999px;
@@ -790,7 +796,10 @@ a.nav-cta {
 [data-theme="dark"] .portrait-tag,
 [data-theme="dark"] .timeline-org,
 [data-theme="dark"] .current-read-author,
-[data-theme="dark"] .involve-role {
+[data-theme="dark"] .involve-role,
+[data-theme="dark"] .eyebrow,
+[data-theme="dark"] .timeline-date,
+[data-theme="dark"] .current-read-label {
   color: var(--rose-soft);
 }
 [data-theme="dark"] em {
