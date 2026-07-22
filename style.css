@@ -389,6 +389,13 @@ a.nav-cta {
   color: var(--purple-600);
   margin-bottom: 12px;
 }
+.involve-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+}
+.involve-card li { margin-bottom: 6px; font-size: 0.96rem; }
+.involve-card li:last-child { margin-bottom: 0; }
 
 /* ---------- Education card ---------- */
 .education-card {
@@ -520,6 +527,97 @@ a.nav-cta {
   padding: 7px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
+}
+
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--purple-600), var(--rose));
+  z-index: 1;
+}
+.project-card:hover { transform: translateY(-6px); }
+.project-media {
+  position: relative;
+  width: 38%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.project-media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--lavender-soft), var(--lavender));
+}
+.project-media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  background: var(--paper);
+  color: var(--purple-700);
+  font-size: 1.3rem;
+  box-shadow: var(--shadow);
+}
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 28px 30px;
+}
+.project-tag {
+  display: inline-block;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--rose-deep);
+  background: var(--rose-soft);
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.project-body h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.project-body p { font-size: 0.95rem; margin-bottom: 22px; flex: 1; }
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+.btn-sm {
+  padding: 9px 18px;
+  font-size: 0.85rem;
 }
 
 /* ---------- Books ---------- */
@@ -678,6 +776,7 @@ a.nav-cta {
   .hero-actions { justify-content: center; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
   .book-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -702,6 +801,9 @@ a.nav-cta {
   .card-grid { grid-template-columns: 1fr; }
   .involve-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card { flex-direction: column; }
+  .project-media { width: 100%; height: 200px; }
   .book-grid { grid-template-columns: 1fr 1fr; }
   .current-read { flex-direction: column; text-align: center; padding: 32px 24px; }
   .current-read-info { max-width: none; }
