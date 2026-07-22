@@ -570,24 +570,6 @@ a.nav-cta {
   object-position: top;
   display: block;
 }
-.project-media-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--lavender-soft), var(--lavender));
-}
-.project-media-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 15px;
-  background: var(--paper);
-  color: var(--purple-700);
-  font-size: 1.3rem;
-  box-shadow: var(--shadow);
-}
 .project-body {
   display: flex;
   flex-direction: column;
