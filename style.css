@@ -422,13 +422,21 @@ a.nav-cta {
   border-radius: 50%;
   padding: 6px;
 }
+.education-tags-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  margin-top: 26px;
+  padding-top: 26px;
+  margin-bottom: 12px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
 .education-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 26px;
-  padding-top: 26px;
-  border-top: 1px solid rgba(255,255,255,0.18);
 }
 .education-tags span {
   background: rgba(255,255,255,0.12);
@@ -761,7 +769,7 @@ a.nav-cta {
   .hero-lede { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
   .card-grid { grid-template-columns: 1fr 1fr; }
-  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card { height: auto; }
   .project-media { height: 200px; }
