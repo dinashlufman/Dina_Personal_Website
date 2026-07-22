@@ -497,8 +497,8 @@ a.nav-cta {
 /* ---------- Skills ---------- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
   align-items: start;
 }
 .skills-group {
@@ -506,7 +506,7 @@ a.nav-cta {
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 26px 24px;
+  padding: 22px 18px;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -517,14 +517,14 @@ a.nav-cta {
   height: 4px;
   background: linear-gradient(90deg, var(--purple-600), var(--rose));
 }
-.skills-group h3 { font-size: 1.05rem; margin-bottom: 16px; }
-.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.skills-group h3 { font-size: 1rem; margin-bottom: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips span {
   background: var(--lavender-soft);
   color: var(--purple-800);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  padding: 7px 14px;
+  padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
 }
