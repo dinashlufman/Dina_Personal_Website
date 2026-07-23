@@ -19,7 +19,7 @@
   --border: rgba(91, 42, 134, 0.14);
   --shadow: 0 20px 45px -25px rgba(67, 31, 102, 0.45);
   --radius: 18px;
-  --max-width: 1120px;
+  --max-width: 1280px;
   --header-scrolled-bg: rgba(251, 246, 241, 0.85);
   --section-alt-tint: var(--lavender-soft);
 }
@@ -530,13 +530,15 @@ a.nav-cta {
 
 /* ---------- Skills ---------- */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 18px;
   align-items: start;
 }
 .skills-group {
   position: relative;
+  flex: 1 1 300px;
+  min-width: 260px;
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -857,7 +859,8 @@ a.nav-cta {
   .hero-lede { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
   .card-grid { grid-template-columns: 1fr 1fr; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid { flex-direction: column; }
+  .skills-group { flex: 0 1 auto; width: 100%; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card { height: auto; }
   .project-media { height: 200px; }
@@ -885,7 +888,8 @@ a.nav-cta {
   .nav-toggle { display: flex; }
   .card-grid { grid-template-columns: 1fr; }
   .involve-grid { grid-template-columns: 1fr; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid { flex-direction: column; }
+  .skills-group { flex: 0 1 auto; width: 100%; }
   .book-grid { grid-template-columns: 1fr 1fr; }
   .current-read { flex-direction: column; text-align: center; padding: 32px 24px; }
   .current-read-info { max-width: none; }
