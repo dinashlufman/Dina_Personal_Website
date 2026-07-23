@@ -531,7 +531,7 @@ a.nav-cta {
 /* ---------- Skills ---------- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
   align-items: start;
 }
@@ -561,6 +561,7 @@ a.nav-cta {
   padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
+  white-space: nowrap;
 }
 
 /* ---------- Projects ---------- */
