@@ -537,12 +537,12 @@ a.nav-cta {
 }
 .skills-group {
   position: relative;
-  flex: 1 1 300px;
-  min-width: 260px;
+  flex: 1 1 200px;
+  min-width: 180px;
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px 18px;
+  padding: 16px 14px;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -553,14 +553,14 @@ a.nav-cta {
   height: 4px;
   background: linear-gradient(90deg, var(--purple-600), var(--rose));
 }
-.skills-group h3 { font-size: 1rem; margin-bottom: 14px; }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.skills-group h3 { font-size: 0.92rem; margin-bottom: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips span {
   background: var(--lavender-soft);
   color: var(--purple-800);
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  padding: 6px 12px;
+  padding: 5px 9px;
   border-radius: 999px;
   border: 1px solid var(--border);
   white-space: nowrap;
