@@ -684,6 +684,8 @@ a.nav-cta {
 .current-read-info h3 { font-size: 1.4rem; margin-bottom: 4px; }
 .current-read-author { color: var(--purple-700); font-weight: 600; margin-bottom: 12px; }
 .current-read-desc { font-size: 0.97rem; margin-bottom: 16px; }
+.current-read-cite { font-size: 0.82rem; color: var(--ink-soft, #6b6b76); margin-top: -10px; margin-bottom: 16px; }
+.current-read-cite a { color: inherit; text-decoration: underline; }
 .current-read-meta {
   display: flex;
   flex-wrap: wrap;
